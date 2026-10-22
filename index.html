@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Duggan · Data Engineer &amp; Software Developer</title>
+  <meta name="description" content="Pedro Duggan, data engineer and software developer based in Buenos Aires, Argentina. Data workflows, databases, reporting tools and web development.">
+  <meta name="author" content="Pedro Duggan">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pedro Duggan · Data Engineer &amp; Software Developer">
+  <meta property="og:description" content="Data engineer and software developer based in Buenos Aires, Argentina.">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1217" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply a saved theme before first paint so the page doesn't flash
+    document.documentElement.classList.add('js');
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch (e) {}
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Icon sprite (Lucide icons, ISC licence) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#top">Pedro Duggan</a>
+      <nav aria-label="Sections">
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="container hero" id="top">
+      <div class="hero__text">
+        <p class="eyebrow">Data Engineer · Software Developer</p>
+        <h1>Pedro Duggan</h1>
+        <p class="hero__lead">
+          I design data workflows, databases and reporting tools, and build the software that sits on top of them.
+          Currently consulting for oil &amp; gas companies in Argentina with Mau Solutions.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            Get in touch
+          </a>
+        </div>
+        <ul class="hero__meta">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Buenos Aires, Argentina</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Spanish · English (C1)</li>
+        </ul>
+      </div>
+      <figure class="hero__photo">
+        <img src="assets/photo.jpg" alt="Portrait of Pedro Duggan" width="545" height="935" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- About -->
+    <section class="container section" id="about" aria-labelledby="about-title">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about reveal">
+        <div class="about__text">
+          <p>
+            I've worked with data and software since 2015. It started with financial and production planning for
+            agricultural businesses, and has since taken me through e-commerce, non-profit training, hospitality and,
+            today, oil &amp; gas.
+          </p>
+          <p>
+            Across those industries the work has a common thread: gather the data, clean it up, store it consistently,
+            and build the tools people need to track what's happening and act on it. Alongside that, I'm studying
+            Electronic Engineering at the University of Buenos Aires.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>Currently</dt><dd>Data Engineer at Mau Solutions Corp.</dd></div>
+          <div><dt>Studying</dt><dd>Electronic Engineering, FIUBA</dd></div>
+          <div><dt>Industries</dt><dd>Oil &amp; gas, agriculture, hospitality, e-commerce, non-profit</dd></div>
+          <div><dt>Experience</dt><dd>Data &amp; software since 2015</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Selected work -->
+    <section class="container section" id="work" aria-labelledby="work-title">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 id="work-title">Selected work</h2>
+      </div>
+      <ul class="cards">
+        <li class="card reveal">
+          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
+          <p class="card__label">Mau Solutions · Oil &amp; gas</p>
+          <h3>Geological data tooling</h3>
+          <p>Tools to gather, sanitize and manage geological data, with processes to visualize and analyze the results efficiently.</p>
+        </li>
+        <li class="card reveal">
+          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>
+          <p class="card__label">Mau Solutions · Training</p>
+          <h3>Training platform</h3>
+          <p>Designed a training platform that standardized how material is managed and made content easier for users to access.</p>
+        </li>
+        <li class="card reveal">
+          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
+          <p class="card__label">Mau Solutions · Reporting</p>
+          <h3>Project reporting &amp; monitoring</h3>
+          <p>Reporting and monitoring tools to track project progress, cut redundancy and improve development efficiency, plus workflows to centralize code, docs and assets.</p>
+        </li>
+        <li class="card reveal">
+          <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-bulb"/></svg></span>
+          <p class="card__label">Co-founder · 2016–2017</p>
+          <h3>MiCarrera</h3>
+          <p>Created and built a web-based business that was accepted into the UADE Entrepreneurship Center's business incubation program.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="container section" id="experience" aria-labelledby="experience-title">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 id="experience-title">Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="job reveal">
+          <p class="job__date">2023 — Present</p>
+          <div>
+            <h3>Data Engineer / Software Developer</h3>
+            <p class="job__company">Mau Solutions Corp.</p>
+            <ul>
+              <li>Data engineering and software development consultant for oil &amp; gas companies in Argentina.</li>
+              <li>Designed workflows to centralize code, documentation and project assets, and trained staff on their use.</li>
+              <li>Built reporting and monitoring tools to track project progress, reduce redundancy and improve development efficiency.</li>
+              <li>Designed a training platform, standardizing material management and optimizing user access to content.</li>
+              <li>Ran data gathering and database management, streamlining access and keeping stored information consistent.</li>
+              <li>Developed tools to gather, sanitize and manage geological data, with processes to visualize and analyze results.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">2018 — 2024</p>
+          <div>
+            <h3>Data Engineer / Consultant</h3>
+            <p class="job__company">Lynca S.R.L.</p>
+            <ul>
+              <li>Directed financial and production planning for agricultural operations, managing data and logistics to increase efficiency across multiple fields.</li>
+              <li>Directed financial planning and set up operational processes to launch and run a lodging operation.</li>
+              <li>Introduced monitoring methods to optimize resource allocation and service quality.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">2020 — 2021</p>
+          <div>
+            <h3>Independent Consultant</h3>
+            <p class="job__company">TechSoup Europe</p>
+            <ul>
+              <li>Adapted and translated material for training sessions.</li>
+              <li>Collected and analyzed survey results to assess impact and generate actionable insights.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">2018 — 2019</p>
+          <div>
+            <h3>Data Engineer / Developer</h3>
+            <p class="job__company">GalleryMarket.com</p>
+            <ul>
+              <li>Ran market surveys and data analysis to support the launch of a digital marketplace.</li>
+              <li>Developed tools to manage operations and monitor site performance.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">2015 — 2019</p>
+          <div>
+            <h3>Data Engineer / Administrator</h3>
+            <p class="job__company">Saltamontes S.A.</p>
+            <ul>
+              <li>Oversaw financial and production planning in agriculture.</li>
+              <li>Implemented systems for data management, employee coordination and performance monitoring.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <p class="job__date">2016 — 2017</p>
+          <div>
+            <h3>Co-Founder &amp; Lead Developer</h3>
+            <p class="job__company">MiCarrera</p>
+            <ul>
+              <li>Created and developed a web-based business accepted into the UADE Entrepreneurship Center business incubation program.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section class="container section" id="skills" aria-labelledby="skills-title">
+      <div class="section__head reveal">
+        <span class="section__num">04</span>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="panel reveal">
+          <h3 class="subhead">Advanced</h3>
+          <ul class="chips">
+            <li>SQL</li><li>JavaScript</li><li>PHP</li><li>HTML</li><li>CSS</li><li>Git</li>
+          </ul>
+        </div>
+        <div class="panel reveal">
+          <h3 class="subhead">Intermediate</h3>
+          <ul class="chips">
+            <li>Python</li><li>C</li>
+          </ul>
+        </div>
+        <div class="panel reveal">
+          <h3 class="subhead">Languages</h3>
+          <ul class="langs">
+            <li>Spanish <span>Native</span></li>
+            <li>English <span>Fluent · C1</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & distinctions -->
+    <section class="container section" id="education" aria-labelledby="education-title">
+      <div class="section__head reveal">
+        <span class="section__num">05</span>
+        <h2 id="education-title">Education &amp; distinctions</h2>
+      </div>
+      <div class="split">
+        <div class="reveal">
+          <h3 class="subhead">Education</h3>
+          <ul class="entries">
+            <li>
+              <p class="entry__date">2022 — Present</p>
+              <p class="entry__title">Electronic Engineering</p>
+              <p class="entry__sub">Facultad de Ingeniería, Universidad de Buenos Aires</p>
+            </li>
+            <li>
+              <p class="entry__date">2004 — 2015</p>
+              <p class="entry__title">Primary &amp; Secondary Education</p>
+              <p class="entry__sub">Colegio Cardenal Newman</p>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="subhead">Distinctions</h3>
+          <ul class="entries">
+            <li>
+              <p class="entry__title">Cambridge Outstanding Award</p>
+              <p class="entry__sub">Top in Argentina, AS Thinking Skills</p>
+            </li>
+            <li>
+              <p class="entry__title">National Math Olympiad</p>
+            </li>
+            <li>
+              <p class="entry__title">UADE Entrepreneurship Center</p>
+              <p class="entry__sub">Business Incubation Program participant</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact reveal">
+        <h2 id="contact-title">Get in touch</h2>
+        <p>Have a project or a role in mind? I'd be glad to hear about it. Email is the quickest way to reach me.</p>
+        <ul class="contact__links">
+          <li>
+            <a class="btn btn--primary" href="mailto:pedroh.duggan@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              pedroh.duggan@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year">2026</span> Pedro Duggan</p>
+    <p>Buenos Aires, Argentina</p>
+  </footer>
+</body>
+</html>
